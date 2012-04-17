@@ -55,7 +55,7 @@ disp('The code sequence:');
 disp(encode);
  
 % adding awgn noise to the encoded sequence
-noise=awgn(encode,1);
+noise=awgn(encode,.5);
  
 % converting the resultant sequence back to binary sequence
 for i=1:length(encode)
